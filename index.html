@@ -1,50 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title%}{% endblock %}</title>
-    <!-- {% load static %}
-    <link rel="stylesheet" src="{% static "main.css" %}"> -->
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static "main.css" %}">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 4rem;
+            position: relative;
+            top: 10rem;
+        }
+        
+        h3 {
+            position: relative;
+            top: 20rem;
+            font-size: 2rem;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        
+        a {
+            position: relative;
+            top: 25rem;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+    </style>
+</head>
 
-{% block style %}
-
-{% endblock %}
-
-  </head>
-  <body>
-    <div id="mainBody">
-      <h1 id="name">SAMRAT THAPA</h1>
-      <div class="navBar">
-        <a class="home" href="{% url 'home:Home' %}">HOME</a>
-        <a class="" href="{% url 'home:Projects' %}">Projects</a>
-        <a class="" href="#">blu</a>
-
-      </div>
-
-
-
-    {% block body %}
-
-    {% endblock %}
-
-
-    </div>
-    <div class="socials">
-      <a class="lul" href="https://www.facebook.com/bladesamrat/"><img src="{% static 'images\facebook.png' %}" alt="facebook" ></a>
-      <a href="#"><img src="{% static 'images\twitter.png' %}" alt="twitter"></a>
-      <a href="https://www.linkedin.com/in/samrat-thapa-7b9aa6157/"><img src="{% static 'images\linkedin.png' %}" alt="linkedin"></a>
-      <a href="https://github.com/SamratJK"><img src="{% static 'images\github.png' %}" alt="github"></a>
-      <span>Copyright 2021</span>
-    </div>
+<body>
+    <div class="container">
+        <h1>Comming Soon</h1>
+        <h3>For time being check out <br> </h3>
+        <a href="https://hu8wolf.github.io/aboutme">Porfolio</a>
 
 
     </div>
 
-    <script src="{% static 'js\main.js' %}">
+</body>
 
-    </script>
-  </body>
 </html>
